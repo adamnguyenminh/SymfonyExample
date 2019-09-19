@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h2>HELLO {{ person.name }}</h2>
+    <h2>LASTNAME: {{ person.lastname }}</h2>
+    <h2>AGE {{ person.age }}</h2>
+
+    <h1>USER FORM</h1>
+    {{ form_start(user_form) }}
+        {{ form_label(user_form.fullname) }}
+    {{ form_end(user_form) }}
+    <hr>
+{#    <h2>RENDER DATABASE IN FORM SEND</h2>#}
+{#    {{ post.name }}#}
+{#    <br>#}
+{#    {{ post.author }}#}
+{% endblock %}
